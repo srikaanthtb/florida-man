@@ -1,7 +1,8 @@
 $(function() {
     function parseRSS(callback) {
       $.ajax({
-        url: 'https://news.google.com/rss/search?q=florida%20man&hl=en-GB&gl=GB&ceid=GB:en',
+        url: 'http://cors.io/?u=https://news.google.com/rss/search?q=florida%20man&hl=en-GB&gl=GB&ceid=GB:en',
+        type: 'GET',
         dataType: 'xml',
         error: function(e) {
               alert("An error occurred while processing XML file");
