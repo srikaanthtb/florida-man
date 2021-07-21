@@ -1,7 +1,7 @@
 $(function() {
     function parseRSS(callback) {
       $.ajax({
-        url: 'https://cors-anywhere.herokuapp.com/https://news.google.com/rss/search?q=florida%20man&hl=en-GB&gl=GB&ceid=GB:en',
+        url: 'https://news.google.com/rss/search?q=florida%20man&hl=en-GB&gl=GB&ceid=GB:en',
         type: 'POST',
         dataType: 'xml',
         error: function(e) {
