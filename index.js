@@ -2,7 +2,7 @@
 const express = require('express')
 const app = express();
 var cors = require('cors')
-const port = 8000;
+const PORT = process.env.PORT || 8000;
 
 app.use(cors())
 
@@ -20,6 +20,6 @@ app.get('/links.js', function(req, res){
 });
 
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}!`)
+app.listen(PORT, () => {
+  console.log(`Example app listening on port ${PORT}!`)
 });
