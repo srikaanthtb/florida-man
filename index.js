@@ -12,10 +12,10 @@ app.use(function (req, res, next) {
   next();
 });
 
-app.get('/', (req, res) => {
+app.get('/', (req, res, next) => {
   res.sendFile(__dirname + '/index.html')
 });
-app.get('/links.js', function(req, res){
+app.get('/links.js', function(req, res, next){
   res.sendFile(__dirname + '/links.js');
 });
 
